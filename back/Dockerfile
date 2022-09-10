@@ -1,6 +1,6 @@
 FROM golang:latest
 
-WORKDIR C:\TextureAI\app
+WORKDIR /serve
 
 COPY  . .
 

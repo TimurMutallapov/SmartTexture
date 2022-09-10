@@ -10,7 +10,7 @@ var db *sql.DB
 
 func Setup() {
 
-	connStr := "user=postgres password=1337 dbname=users sslmode=disable"
+	connStr := "port=5432 user=postgres password=1337 dbname=users sslmode=disable"
 	var err error
 	db, err = sql.Open("postgres", connStr)
 	if err != nil {
